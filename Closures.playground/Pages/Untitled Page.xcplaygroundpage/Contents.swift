@@ -24,6 +24,8 @@ calculate(7, 15, operationFunction: { $0 + $1})
 
 calculate(9, 15, operationFunction:  +  )
 
+calculate(9, 15) { $0 + $1 }
+
 var names = ["bruno","carol","vitor","tais","roberto"]
 
 var result = names.map({$0.uppercased()})
@@ -32,3 +34,8 @@ print(names.map({$0 + " last name"}))
 
 print(names.filter({$0.count < 5}))
 
+let peoples = ["Junior": 18, "Bruno": 20]
+
+let nameList = peoples.filter { $0.value > 18 }.map{ $0.key }
+
+print(nameList)
