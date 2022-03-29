@@ -39,3 +39,23 @@ let peoples = ["Junior": 18, "Bruno": 20]
 let nameList = peoples.filter { $0.value > 18 }.map{ $0.key }
 
 print(nameList)
+
+
+class People {
+    var name:String
+    var email:String? {
+        get {
+            guard let firstLetter:String? = self.name else { return "" }
+            return firstLetter! + "@gmail.com"
+        }
+    }
+    
+    init(name:String){
+        self.name = name
+    }
+}
+
+print(People(name: "Bruno").email!)
+
+
+
