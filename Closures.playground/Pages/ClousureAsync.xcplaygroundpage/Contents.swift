@@ -6,9 +6,12 @@ import Foundation
 
 //: [Next](@next)
 
-var messageResult:String = "" {
+var messageResult:String = "Waitingou acho que nao" {
+    willSet {
+        print("novo resultado \(newValue)")
+    }
     didSet {
-        print("setando resultado")
+        print("antigo resultado \(oldValue)")
     }
 }
 

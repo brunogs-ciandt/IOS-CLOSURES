@@ -3,5 +3,6 @@
     <pages>
         <page name='ClousureAsync'/>
         <page name='Untitled Page'/>
+        <page name='TryError'/>
     </pages>
 </playground>
