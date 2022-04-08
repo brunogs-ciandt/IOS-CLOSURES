@@ -1,2 +1,2 @@
 # IOS-CLOSURES
-Aprendendo closures em swift
+Aprendendo closures e tratamento de erros em swift
